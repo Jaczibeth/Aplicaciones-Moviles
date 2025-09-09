@@ -1,5 +1,5 @@
 import {  Text, View, StyleSheet, Platform, StatusBar, TouchableOpacity} from 'react-native';
-import Icon  from 'react-native-vector-icons/FontAwesome';
+import Icon from 'react-native-vector-icons/FontAwesome';
 export default function Botones() {
   return (
     <View style={styles.mainS}>  
@@ -10,10 +10,14 @@ export default function Botones() {
         </TouchableOpacity>
          {/* Boton con icono*/}
         <TouchableOpacity style={styles.botonIcono}>
-            <Icon name="person"  size={20} style={styles.iconB}/>
+            <Icon name="rocket"  size={20} style={styles.iconB}/>
             <Text style={styles.text}> Boton Icono </Text>
         </TouchableOpacity>
-
+  {/* Boton con icono 2 */}
+        <TouchableOpacity style={styles.botonIcono}>
+            <Icon name="user"  size={20} style={styles.iconB}/>
+            <Text style={styles.text}> Boton Usuario </Text>
+        </TouchableOpacity>
     </View>
   );
 }
