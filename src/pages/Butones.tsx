@@ -15,7 +15,7 @@ export default function Botones() {
         </TouchableOpacity>
   {/* Boton con icono 2 */}
         <TouchableOpacity style={styles.botonIcono}>
-            <Icon name="user"  size={20} style={styles.iconB}/>
+            <Icon name="user"  size={20} style={styles.iconRight}/>
             <Text style={styles.text}> Boton Usuario </Text>
         </TouchableOpacity>
     </View>
@@ -60,5 +60,8 @@ text:{
 },
 iconB: {
     color: '#861889ff',
-}
+    
+},
+iconRight: {
+    color: '#0d0c0cff',},
 });
