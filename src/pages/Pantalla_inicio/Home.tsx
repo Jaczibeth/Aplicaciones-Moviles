@@ -7,7 +7,7 @@
 
 import {  } from '@react-native/new-app-screen';
 import { Image, SafeAreaView, StyleSheet, Text} from 'react-native';
-import Botones from './Butones';
+import Botones from '../Tipos_botones/Butones';
  export default  function Home() {
   
 
