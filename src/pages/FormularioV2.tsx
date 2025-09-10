@@ -2,6 +2,7 @@ import { Image, ScrollView, Dimensions } from 'react-native';
 import { StyleSheet, View, Platform, StatusBar, Text, SafeAreaView, TextInput, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
+
 const { width } = Dimensions.get('window');
 
 export const FormularioV2 = () => {
@@ -11,6 +12,9 @@ export const FormularioV2 = () => {
             <ScrollView>
                 <Text style={styles.form}>Formulario De Jaczibeth </Text>
                 <View style={styles.container}>
+                    <TouchableOpacity style={styles.cerrarButton}>
+                        <Icon name="close" size={20} color={'#100f0fff'} />
+                    </TouchableOpacity>
                     <Image source={{ uri: 'https://i.pinimg.com/originals/d5/ac/a0/d5aca0cd3681d4a0c0883644f19f1762.jpg ' }} style={styles.avatar} />
                     <Text style={styles.name}>Jaczibeth Cruz Ramirez</Text>
                     <View style={styles.infocontainer}>
@@ -112,5 +116,16 @@ const styles = StyleSheet.create({
     },
     botonGico: {
         marginRight: 10,
+    },
+    cerrarButton: {
+        position: 'absolute',
+        top: 10,
+        right: 10,
+        zIndex: 1,
+        backgroundColor: '#fff',
+        borderRadius: 20,
+        padding: 6,
+        alignItems: 'center',
+        elevation: 2,
     },
 });
