@@ -1,11 +1,13 @@
 import {  Text, View, StyleSheet, Platform, StatusBar, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import CardBasico from '../components/CardBasico';
+import CardImagen from '../components/CardImagen';
 export default function HomePrincipal() {
   return (
     <View style={styles.mainS}>  
         <Text style={styles.title}>Pagina Principal</Text>
      <CardBasico/>
+     <CardImagen/>
     </View>
   );
 }
