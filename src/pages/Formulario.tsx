@@ -2,10 +2,12 @@ import { StyleSheet, View, Platform, StatusBar, Text, SafeAreaView,TextInput } f
 export const Formulario = () => {
     return (
         <View style={styles.mainS}>
-<Text style={styles.form}>Formulario De Jaczibeth </Text>
             <SafeAreaView style={styles.mainS}>
+                <Text style={styles.form}>Formulario De Jaczibeth </Text>
                 <Text style={styles.label}>Nombre:</Text>
                  <TextInput style={styles.input1} placeholder='Escribe tu nombre completo'/>
+                  <Text style={styles.label}>Carrera:</Text>
+                 <TextInput editable={false} style={styles.input1} placeholder='Escribe la carrera a la que perteneces'/>
                   <Text style={styles.label}>Descripcion:</Text>
                  <TextInput multiline={true} numberOfLines={4} style={[styles.input1,styles.textarea]} placeholder='Describe que esperas de la materia de app moviles'/>
                  <Text style={styles.label}>Correo Electronico:</Text>
@@ -30,7 +32,7 @@ const styles = StyleSheet.create({
         fontSize: 22,
         fontWeight: 'bold',
         textAlign: 'center',
-        marginTop: 10,
+        marginTop: -50,
     },
     input1: {
         borderWidth: 1,
