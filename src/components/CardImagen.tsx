@@ -5,9 +5,9 @@ export default function CardImagen() {
     return (
         
         <View style={Styles.card}>
-             <Image  style={Styles.img} source={{ uri: 'https://reactnative.dev/docs/assets/p_cat2.png'  }} />
-             <Text  style={Styles.Titulo}>Mi animal Favorito</Text>
-             <Text  style={Styles.Contenido}> Los gatitos son animales tiernos </Text>
+             <Image  style={Styles.img} source={{ uri: 'https://www.bourguignonfloristas.es/media/webp_image/wysiwyg/Calendario_floral_Bourguignon6.webp'  }} />
+             <Text  style={Styles.Titulo}>Tulipanes</Text>
+             <Text  style={Styles.Contenido}> Los tulipanes son mis flores favoritas </Text>
                
         </View>
         
@@ -36,7 +36,7 @@ const Styles = StyleSheet.create({
         textAlign:'justify',
     },
     img:{
-        width:100,
+        width:350,
         height:150,
         alignSelf:'center',
         borderRadius:15,

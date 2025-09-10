@@ -5,8 +5,8 @@ export default function CardBasico() {
     return (
         
         <View style={Styles.card}>
-             <Text  style={Styles.Titulo}>Pagina Principal</Text>
-             <Text  style={Styles.Contenido}>  Hablemos acerca de los gatitos </Text>
+             <Text  style={Styles.Titulo}>MIS FLORES FAVORITAS</Text>
+             <Text  style={Styles.Contenido}>  Hablemos acerca de los Tulipanes </Text>
         </View>
         
 
