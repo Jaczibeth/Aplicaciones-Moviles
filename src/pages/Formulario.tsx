@@ -7,7 +7,7 @@ export const Formulario = () => {
                 <Text style={styles.label}>Nombre:</Text>
                  <TextInput style={styles.input1} placeholder='Escribe tu nombre completo'/>
                   <Text style={styles.label}>Descripcion:</Text>
-                 <TextInput style={[styles.input1,styles.textarea]} placeholder='Describe que esperas de la materia de app moviles'/>
+                 <TextInput multiline={true} numberOfLines={4} style={[styles.input1,styles.textarea]} placeholder='Describe que esperas de la materia de app moviles'/>
             </SafeAreaView>
         </View>
     );
