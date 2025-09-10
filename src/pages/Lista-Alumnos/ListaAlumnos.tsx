@@ -1,3 +1,4 @@
+// creacion del listado alumnos
 import React from 'react'
 import { StyleSheet, Platform, StatusBar, View, Text, SafeAreaView, ScrollView, Image, Dimensions } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
