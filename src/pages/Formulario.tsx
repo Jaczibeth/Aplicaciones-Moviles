@@ -1,7 +1,8 @@
-import { StyleSheet, View, Platform, StatusBar, Text, SafeAreaView,TextInput } from 'react-native';
+import { StyleSheet, View, Platform, StatusBar, Text, SafeAreaView,TextInput,TouchableOpacity} from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 export const Formulario = () => {
     return (
-        <View style={styles.mainS}>
+       
             <SafeAreaView style={styles.mainS}>
                 <Text style={styles.form}>Formulario De Jaczibeth </Text>
                 <Text style={styles.label}>Nombre:</Text>
@@ -16,8 +17,13 @@ export const Formulario = () => {
                  <TextInput style={styles.input1} placeholder='************** ' secureTextEntry />
                  <Text style={styles.label}>Telefono:</Text>
                  <TextInput style={styles.input1} placeholder='9532754149 ' keyboardType='numeric' />
+                 <TouchableOpacity style={styles.botonGIcon}>
+                               <Icon name="send"  size={20} color={'#fff' } style={styles.botonGico }/>
+                             <Text style={styles.textobotong}> Enviar Formulario</Text>
+                          </TouchableOpacity>
+
             </SafeAreaView>
-        </View>
+    
     );
 }
 const styles = StyleSheet.create({
@@ -32,7 +38,7 @@ const styles = StyleSheet.create({
         fontSize: 22,
         fontWeight: 'bold',
         textAlign: 'center',
-        marginTop: -50,
+        marginTop: 10,
     },
     input1: {
         borderWidth: 1,
@@ -51,5 +57,24 @@ const styles = StyleSheet.create({
         height: 100,
         fontWeight: 'bold',
         textAlignVertical: 'top',
-    }
+    },
+
+      textobotong:{
+    color:'#18191bd4',
+    fontWeight:'bold',
+    fontSize:15,
+    textAlign:'center',},
+
+    botonGIcon:{
+        backgroundColor:'#f0b2ceff',
+        marginTop:10,
+        flexDirection:'row',
+        alignContent:'center',
+        justifyContent:'center',
+        paddingVertical:12,
+        borderRadius:15,
+    },
+   botonGico :{
+        marginRight:10,
+    },
 });
