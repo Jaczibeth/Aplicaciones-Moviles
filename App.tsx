@@ -5,13 +5,14 @@
  * @format
  */
 
-import { Formulario } from "./src/pages/Formulario";
+// import { Formulario } from "./src/pages/Formulario";
 
 //import Home from "./src/pages/Home";
 //import  Home  from './src/pages/Home';
 //import  Botones  from './src/pages/Butones';
 //import  BotonesV2  from './src/pages/BotonesV2';
 // import HomePrincipal from "./src/pages/HomePrincipal";
+import { FormularioV2 } from "./src/pages/FormularioV2";
  export default function App() {
   
 
@@ -21,7 +22,9 @@ import { Formulario } from "./src/pages/Formulario";
   //<Botones />
   //<BotonesV2 />
 //   <HomePrincipal />
-<Formulario/>
+// {/* <Formulario/> */}
+   <FormularioV2/>
+
   );
 }
 
