@@ -1,6 +1,6 @@
 // creacion del listado alumnos
 import React from 'react'
-import { StyleSheet, Platform, StatusBar, View, Text, SafeAreaView, ScrollView, Image, Dimensions } from 'react-native';
+import { StyleSheet, Platform, StatusBar, View, Text, SafeAreaView, ScrollView, Image, Dimensions, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 const { width } = Dimensions.get('window');
 export const ListaAlumnos = () => {
@@ -14,17 +14,20 @@ export const ListaAlumnos = () => {
             </View>
             {/* Cierre de AppBar */}
             {/* inicio de contenido de lista  alumnos */}
-            <ScrollView >
-                <Text style={styles.sectionTitle}>Lista de alumnos</Text>
+            <ScrollView  style={{padding:16}}>
+                <Text style={styles.sectionTitle}>Alumnos de aplicaciones moviles</Text>
                 <View style={styles.card} >
                     <Image source={{ uri: 'https://i.pinimg.com/originals/d5/ac/a0/d5aca0cd3681d4a0c0883644f19f1762.jpg ' }} style={styles.avatar} />
                     <View style={styles.cardInfo}>
                         <Text style={styles.userName}>Jaczibeth Cruz Ramirez</Text>
-                        <Text style={styles.userDetails}>Ingenieria En Sistemas Computacionales</Text>
+                        <Text style={styles.userDetails}>Ing.Sistemas Computacionales</Text>
+                        <TouchableOpacity style={styles.saveButton}>
+                            <Text style={styles.saveButtonText}> Ver mas</Text>
+                        </TouchableOpacity>
                     </View>
                 </View>
             </ScrollView>
-            {/* final de contenido lista alumnos */} 
+            {/* final de contenido lista alumnos */}
         </SafeAreaView>
     )
 }
@@ -52,20 +55,25 @@ const styles = StyleSheet.create({
     },
     sectionTitle: {
 
-        padding:10,
-        fontSize: 13,
+        fontSize: 14,
         fontWeight: 'bold',
+        padding: 16
+        
     },
     avatar: {
         width: width * 0.35,
         height: width * 0.35,
         borderRadius: (width * 0.35) / 2,
-        marginBottom: 20,
-        borderWidth: 2,
-        borderColor: '#afe0f7ff',
+       marginRight:12,
 
     },
     card: {
+        padding:16,
+        flexDirection:'row',
+        borderRadius:16,
+        backgroundColor:'#e5f6ffff',
+        elevation:2,
+        marginBottom:5,
 
     },
     cardInfo: {
@@ -73,10 +81,17 @@ const styles = StyleSheet.create({
     },
 
     userName: {
-        padding:10
+        padding: 10
     },
     userDetails: {
-        padding:10
+        padding: 10,
+        textAlign:'justify',
     },
+    saveButton: {
+
+    },
+    saveButtonText: {
+
+    }
 
 });
