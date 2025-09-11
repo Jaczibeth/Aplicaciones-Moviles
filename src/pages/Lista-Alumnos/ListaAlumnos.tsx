@@ -32,7 +32,24 @@ export const ListaAlumnos = () => {
                 ))}
             </ScrollView>
             {/* final de contenido lista alumnos */}
+            {/* navbar */}
+            <View style={styles.navbar}>
+                <View style={styles.navItem}> 
+                    <Icon name='bell' size={20} color={'#0f0e0eff'}/>
+                        <Text style={styles.navtext}> Inicio</Text>
+                </View>
+                <View style={styles.navItem}> 
+                    <Icon name='home' size={20} color={'#0f0e0eff'}/>
+                        <Text style={styles.navtext}> Inicio</Text>
+                </View>
+                <View style={styles.navItem}> 
+                    <Icon name='cog' size={20} color={'#0f0e0eff'}/>
+                        <Text style={styles.navtext}> Inicio</Text>
+                </View>
+
+            </View>
         </SafeAreaView>
+
     )
 }
 const styles = StyleSheet.create({
@@ -106,6 +123,23 @@ const styles = StyleSheet.create({
     saveButtonText: {
         color: '#ffffff',
         fontWeight: 'bold',
+    },
+    navbar:{
+        flexDirection:'row',
+        justifyContent:'space-around',
+        alignItems:'center',
+        height:70,
+        backgroundColor:'#c8daf5ff ',
+        // marginBottom:10,
+        borderTopWidth:1,
+    },
+    navItem:{
+        alignItems:'center',
+    },
+    navtext:{
+        fontSize:12,
+        color:'#0a0a0aff',
+        marginTop: 4,
     }
 
 });
