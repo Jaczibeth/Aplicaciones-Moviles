@@ -15,78 +15,21 @@ export const ListaAlumnos = () => {
             {/* Cierre de AppBar */}
             {/* inicio de contenido de lista  alumnos */}
             <ScrollView style={{ padding: 16 }}>
-                <Text style={styles.sectionTitle}>Alumnos de aplicaciones moviles</Text>
-                <View style={styles.card} >
-                    <Image source={{ uri: 'https://i.pinimg.com/originals/d5/ac/a0/d5aca0cd3681d4a0c0883644f19f1762.jpg ' }} style={styles.avatar} />
+                <Text style={styles.sectionTitle}>Alumnos de  aplicaciones moviles</Text>
+                {/* Aplicacion del map, que se encarga de iterar sin necesidad de aplicar codigo c/u */}
+                
+                {[1, 2,3,4,5,6,7].map(() => (
+                <View  style={styles.card} >
+                    <Image source={{ uri: 'https://i.pinimg.com/originals/d5/ac/a0/d5aca0cd3681d4a0c0883644f19f1762.jpg' }} style={styles.avatar}/>
                     <View style={styles.cardInfo}>
-                        <Text style={styles.userName}>Jaczibeth Cruz</Text>
-                        <Text style={styles.userDetails}>Ing.Sistemas Computacionales</Text>
-                        <TouchableOpacity style={styles.saveButton}>
-                            <Text style={styles.saveButtonText}> Ver mas</Text>
-                        </TouchableOpacity>
+                    <Text style={styles.userName}>Jaczibeth Cruz </Text>
+                    <Text style={styles.userDetails}>Ing. Sistemas Computacionales</Text>
+                    <TouchableOpacity style={styles.saveButton}>
+                        <Text style={styles.saveButtonText}>Ver más</Text>
+                    </TouchableOpacity>
                     </View>
                 </View>
-                {/* <View style={styles.card} >
-                    <Image source={{ uri: 'https://i.pinimg.com/originals/d5/ac/a0/d5aca0cd3681d4a0c0883644f19f1762.jpg ' }} style={styles.avatar} />
-                    <View style={styles.cardInfo}>
-                        <Text style={styles.userName}>Jaczibeth Cruz</Text>
-                        <Text style={styles.userDetails}>Ing.Sistemas Computacionales</Text>
-                        <TouchableOpacity style={styles.saveButton}>
-                            <Text style={styles.saveButtonText}> Ver mas</Text>
-                        </TouchableOpacity>
-                    </View>
-                </View>
-                <View style={styles.card} >
-                    <Image source={{ uri: 'https://i.pinimg.com/originals/d5/ac/a0/d5aca0cd3681d4a0c0883644f19f1762.jpg ' }} style={styles.avatar} />
-                    <View style={styles.cardInfo}>
-                        <Text style={styles.userName}>Jaczibeth Cruz</Text>
-                        <Text style={styles.userDetails}>Ing.Sistemas Computacionales</Text>
-                        <TouchableOpacity style={styles.saveButton}>
-                            <Text style={styles.saveButtonText}> Ver mas</Text>
-                        </TouchableOpacity>
-                    </View>
-                </View>
-                <View style={styles.card} >
-                    <Image source={{ uri: 'https://i.pinimg.com/originals/d5/ac/a0/d5aca0cd3681d4a0c0883644f19f1762.jpg ' }} style={styles.avatar} />
-                    <View style={styles.cardInfo}>
-                        <Text style={styles.userName}>Jaczibeth Cruz</Text>
-                        <Text style={styles.userDetails}>Ing.Sistemas Computacionales</Text>
-                        <TouchableOpacity style={styles.saveButton}>
-                            <Text style={styles.saveButtonText}> Ver mas</Text>
-                        </TouchableOpacity>
-                    </View>
-                </View>
-                <View style={styles.card} >
-                    <Image source={{ uri: 'https://i.pinimg.com/originals/d5/ac/a0/d5aca0cd3681d4a0c0883644f19f1762.jpg ' }} style={styles.avatar} />
-                    <View style={styles.cardInfo}>
-                        <Text style={styles.userName}>Jaczibeth Cruz</Text>
-                        <Text style={styles.userDetails}>Ing.Sistemas Computacionales</Text>
-                        <TouchableOpacity style={styles.saveButton}>
-                            <Text style={styles.saveButtonText}> Ver mas</Text>
-                        </TouchableOpacity>
-                    </View>
-                </View>
-                 <View style={styles.card} >
-                    <Image source={{ uri: 'https://i.pinimg.com/originals/d5/ac/a0/d5aca0cd3681d4a0c0883644f19f1762.jpg ' }} style={styles.avatar} />
-                    <View style={styles.cardInfo}>
-                        <Text style={styles.userName}>Jaczibeth Cruz</Text>
-                        <Text style={styles.userDetails}>Ing.Sistemas Computacionales</Text>
-                        <TouchableOpacity style={styles.saveButton}>
-                            <Text style={styles.saveButtonText}> Ver mas</Text>
-                        </TouchableOpacity>
-                    </View>
-                </View>
-                 <View style={styles.card} >
-                    <Image source={{ uri: 'https://i.pinimg.com/originals/d5/ac/a0/d5aca0cd3681d4a0c0883644f19f1762.jpg ' }} style={styles.avatar} />
-                    <View style={styles.cardInfo}>
-                        <Text style={styles.userName}>Jaczibeth Cruz</Text>
-                        <Text style={styles.userDetails}>Ing.Sistemas Computacionales</Text>
-                        <TouchableOpacity style={styles.saveButton}>
-                            <Text style={styles.saveButtonText}> Ver mas</Text>
-                        </TouchableOpacity>
-                    </View>
-                </View> */}
-
+                ))}
             </ScrollView>
             {/* final de contenido lista alumnos */}
         </SafeAreaView>

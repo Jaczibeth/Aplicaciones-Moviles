@@ -1,9 +1,10 @@
 import {  Text, View, StyleSheet, Platform, StatusBar, ScrollViewBase, ScrollView} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import CardBasico from '../components/CardBasico';
-import CardImagen from '../components/CardImagen';
-import CardV2 from '../components/CardV2';
-import CardV3 from '../components/CardV3';
+import CardBasico from '../../components/CardBasico';
+import CardImagen from '../../components/CardImagen';
+import CardV2 from '../../components/CardV2';
+import CardV3 from '../../components/CardV3';
+
 export default function HomePrincipal() {
   
   return (
