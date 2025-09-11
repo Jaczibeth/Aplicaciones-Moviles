@@ -14,18 +14,79 @@ export const ListaAlumnos = () => {
             </View>
             {/* Cierre de AppBar */}
             {/* inicio de contenido de lista  alumnos */}
-            <ScrollView  style={{padding:16}}>
+            <ScrollView style={{ padding: 16 }}>
                 <Text style={styles.sectionTitle}>Alumnos de aplicaciones moviles</Text>
                 <View style={styles.card} >
                     <Image source={{ uri: 'https://i.pinimg.com/originals/d5/ac/a0/d5aca0cd3681d4a0c0883644f19f1762.jpg ' }} style={styles.avatar} />
                     <View style={styles.cardInfo}>
-                        <Text style={styles.userName}>Jaczibeth Cruz Ramirez</Text>
+                        <Text style={styles.userName}>Jaczibeth Cruz</Text>
                         <Text style={styles.userDetails}>Ing.Sistemas Computacionales</Text>
                         <TouchableOpacity style={styles.saveButton}>
                             <Text style={styles.saveButtonText}> Ver mas</Text>
                         </TouchableOpacity>
                     </View>
                 </View>
+                {/* <View style={styles.card} >
+                    <Image source={{ uri: 'https://i.pinimg.com/originals/d5/ac/a0/d5aca0cd3681d4a0c0883644f19f1762.jpg ' }} style={styles.avatar} />
+                    <View style={styles.cardInfo}>
+                        <Text style={styles.userName}>Jaczibeth Cruz</Text>
+                        <Text style={styles.userDetails}>Ing.Sistemas Computacionales</Text>
+                        <TouchableOpacity style={styles.saveButton}>
+                            <Text style={styles.saveButtonText}> Ver mas</Text>
+                        </TouchableOpacity>
+                    </View>
+                </View>
+                <View style={styles.card} >
+                    <Image source={{ uri: 'https://i.pinimg.com/originals/d5/ac/a0/d5aca0cd3681d4a0c0883644f19f1762.jpg ' }} style={styles.avatar} />
+                    <View style={styles.cardInfo}>
+                        <Text style={styles.userName}>Jaczibeth Cruz</Text>
+                        <Text style={styles.userDetails}>Ing.Sistemas Computacionales</Text>
+                        <TouchableOpacity style={styles.saveButton}>
+                            <Text style={styles.saveButtonText}> Ver mas</Text>
+                        </TouchableOpacity>
+                    </View>
+                </View>
+                <View style={styles.card} >
+                    <Image source={{ uri: 'https://i.pinimg.com/originals/d5/ac/a0/d5aca0cd3681d4a0c0883644f19f1762.jpg ' }} style={styles.avatar} />
+                    <View style={styles.cardInfo}>
+                        <Text style={styles.userName}>Jaczibeth Cruz</Text>
+                        <Text style={styles.userDetails}>Ing.Sistemas Computacionales</Text>
+                        <TouchableOpacity style={styles.saveButton}>
+                            <Text style={styles.saveButtonText}> Ver mas</Text>
+                        </TouchableOpacity>
+                    </View>
+                </View>
+                <View style={styles.card} >
+                    <Image source={{ uri: 'https://i.pinimg.com/originals/d5/ac/a0/d5aca0cd3681d4a0c0883644f19f1762.jpg ' }} style={styles.avatar} />
+                    <View style={styles.cardInfo}>
+                        <Text style={styles.userName}>Jaczibeth Cruz</Text>
+                        <Text style={styles.userDetails}>Ing.Sistemas Computacionales</Text>
+                        <TouchableOpacity style={styles.saveButton}>
+                            <Text style={styles.saveButtonText}> Ver mas</Text>
+                        </TouchableOpacity>
+                    </View>
+                </View>
+                 <View style={styles.card} >
+                    <Image source={{ uri: 'https://i.pinimg.com/originals/d5/ac/a0/d5aca0cd3681d4a0c0883644f19f1762.jpg ' }} style={styles.avatar} />
+                    <View style={styles.cardInfo}>
+                        <Text style={styles.userName}>Jaczibeth Cruz</Text>
+                        <Text style={styles.userDetails}>Ing.Sistemas Computacionales</Text>
+                        <TouchableOpacity style={styles.saveButton}>
+                            <Text style={styles.saveButtonText}> Ver mas</Text>
+                        </TouchableOpacity>
+                    </View>
+                </View>
+                 <View style={styles.card} >
+                    <Image source={{ uri: 'https://i.pinimg.com/originals/d5/ac/a0/d5aca0cd3681d4a0c0883644f19f1762.jpg ' }} style={styles.avatar} />
+                    <View style={styles.cardInfo}>
+                        <Text style={styles.userName}>Jaczibeth Cruz</Text>
+                        <Text style={styles.userDetails}>Ing.Sistemas Computacionales</Text>
+                        <TouchableOpacity style={styles.saveButton}>
+                            <Text style={styles.saveButtonText}> Ver mas</Text>
+                        </TouchableOpacity>
+                    </View>
+                </View> */}
+
             </ScrollView>
             {/* final de contenido lista alumnos */}
         </SafeAreaView>
@@ -58,40 +119,50 @@ const styles = StyleSheet.create({
         fontSize: 14,
         fontWeight: 'bold',
         padding: 16
-        
+
     },
     avatar: {
         width: width * 0.35,
         height: width * 0.35,
         borderRadius: (width * 0.35) / 2,
-       marginRight:12,
+        marginRight: 12,
 
     },
     card: {
-        padding:16,
-        flexDirection:'row',
-        borderRadius:16,
-        backgroundColor:'#e5f6ffff',
-        elevation:2,
-        marginBottom:5,
+        padding: 16,
+        flexDirection: 'row',
+        borderRadius: 16,
+        backgroundColor: '#e5f6ffff',
+        elevation: 2,
+        marginBottom: 5,
 
     },
     cardInfo: {
-
+        flex: 1,
+        alignContent: 'center'
     },
 
     userName: {
-        padding: 10
+        fontSize: 16,
+        fontWeight: 'bold',
+        marginBottom: 10,
     },
     userDetails: {
-        padding: 10,
-        textAlign:'justify',
+        fontSize: 14,
+        fontWeight: 'bold',
+        marginBottom: 10,
     },
     saveButton: {
-
+        backgroundColor: '#f86cabff',
+        marginTop: 10,
+        paddingVertical: 6,
+        borderRadius: 15,
+        alignSelf: 'flex-end',
+        padding: 10,
     },
     saveButtonText: {
-
+        color: '#ffffff',
+        fontWeight: 'bold',
     }
 
 });
